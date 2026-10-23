@@ -1,0 +1,30 @@
+# Python 缓存和安装产物
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+
+# 本地虚拟环境与私密配置
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# 本地工具记录
+.workbuddy/
+
+# 训练模型及其日志
+/saved_models/
+
+# 评估逐回合数据和运行日志
+/evaluation_200/*.jsonl
+/evaluation_200/*.log
+
+# 临时文件
+/tmp.pdf
+/tmp.txt
+*.pid
+

@@ -1,0 +1,93 @@
+[
+  {
+    "method": "ppo_3400",
+    "episodes": 200,
+    "success": 28,
+    "success_rate": 0.14,
+    "ci_low": 0.09866918625271481,
+    "ci_high": 0.19489993800847627,
+    "caught": 142,
+    "obstacle": 30,
+    "timeout": 0,
+    "detect_fail": 0,
+    "avg_success_steps": 70.0
+  },
+  {
+    "method": "ppo_4000",
+    "episodes": 200,
+    "success": 25,
+    "success_rate": 0.125,
+    "ci_low": 0.0861191515921568,
+    "ci_high": 0.1780153528465839,
+    "caught": 142,
+    "obstacle": 33,
+    "timeout": 0,
+    "detect_fail": 0,
+    "avg_success_steps": 68.84
+  },
+  {
+    "method": "ppo_5200",
+    "episodes": 200,
+    "success": 24,
+    "success_rate": 0.12,
+    "ci_low": 0.08197935023887545,
+    "ci_high": 0.17234361425904846,
+    "caught": 143,
+    "obstacle": 33,
+    "timeout": 0,
+    "detect_fail": 0,
+    "avg_success_steps": 51.541666666666664
+  },
+  {
+    "method": "ppo_7400",
+    "episodes": 200,
+    "success": 29,
+    "success_rate": 0.145,
+    "ci_low": 0.1028928513530641,
+    "ci_high": 0.20048781284894374,
+    "caught": 148,
+    "obstacle": 23,
+    "timeout": 0,
+    "detect_fail": 0,
+    "avg_success_steps": 74.48275862068965
+  },
+  {
+    "method": "ppo_10000",
+    "episodes": 200,
+    "success": 31,
+    "success_rate": 0.155,
+    "ci_low": 0.11139568514638545,
+    "ci_high": 0.211608058937256,
+    "caught": 123,
+    "obstacle": 46,
+    "timeout": 0,
+    "detect_fail": 0,
+    "avg_success_steps": 66.16129032258064
+  },
+  {
+    "method": "velocity_direct",
+    "episodes": 200,
+    "success": 136,
+    "success_rate": 0.68,
+    "ci_low": 0.612479733946457,
+    "ci_high": 0.7407357039229475,
+    "caught": 20,
+    "obstacle": 44,
+    "timeout": 0,
+    "detect_fail": 0,
+    "avg_success_steps": 32.06617647058823
+  },
+  {
+    "method": "velocity_path",
+    "episodes": 200,
+    "success": 137,
+    "success_rate": 0.685,
+    "ci_low": 0.617649158589664,
+    "ci_high": 0.7453778192205573,
+    "caught": 63,
+    "obstacle": 0,
+    "timeout": 0,
+    "detect_fail": 0,
+    "avg_success_steps": 32.36496350364963
+  }
+]
