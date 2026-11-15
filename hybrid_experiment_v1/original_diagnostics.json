@@ -1,0 +1,21 @@
+{
+  "paired_wins": [],
+  "paired_losses": [],
+  "ppo_route_switches": 0,
+  "last20_mean_abs_heading_degrees": 0.3594216131915381,
+  "last20_mean_speed_command": 0.00581024948402293,
+  "caught_examples": [
+    21,
+    26,
+    42,
+    43,
+    44,
+    63,
+    64,
+    66,
+    67,
+    79
+  ],
+  "new_base_vs_old_direct_wins": 36,
+  "new_base_vs_old_direct_losses": 0
+}

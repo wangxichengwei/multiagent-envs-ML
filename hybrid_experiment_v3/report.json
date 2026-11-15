@@ -1,0 +1,158 @@
+{
+  "base_validation100": {
+    "episodes": 100,
+    "success_rate": 0.87,
+    "counts": {
+      "success": 87,
+      "caught": 13,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 36.689655172413794,
+    "avg_switches": 0.0
+  },
+  "evasion_validation100": {
+    "episodes": 100,
+    "success_rate": 0.97,
+    "counts": {
+      "success": 97,
+      "caught": 3,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 42.16494845360825,
+    "avg_switches": 0.77
+  },
+  "base_original200": {
+    "episodes": 200,
+    "success_rate": 0.86,
+    "counts": {
+      "success": 172,
+      "caught": 28,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 35.53488372093023,
+    "avg_switches": 0.0
+  },
+  "evasion_original200": {
+    "episodes": 200,
+    "success_rate": 0.945,
+    "counts": {
+      "success": 189,
+      "caught": 11,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 39.23809523809524,
+    "avg_switches": 0.625
+  },
+  "reference_holdout200": {
+    "episodes": 200,
+    "success_rate": 0.885,
+    "counts": {
+      "success": 177,
+      "caught": 23,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 34.333333333333336,
+    "avg_switches": 0.0
+  },
+  "base_holdout200": {
+    "episodes": 200,
+    "success_rate": 0.885,
+    "counts": {
+      "success": 177,
+      "caught": 23,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 34.333333333333336,
+    "avg_switches": 0.0
+  },
+  "evasion_holdout200": {
+    "episodes": 200,
+    "success_rate": 0.98,
+    "counts": {
+      "success": 196,
+      "caught": 4,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 39.18877551020408,
+    "avg_switches": 0.66
+  },
+  "original200_paired": {
+    "difference": 0.085,
+    "wins": 19,
+    "losses": 2,
+    "ci95": [
+      0.045,
+      0.13
+    ],
+    "wins_ids": [
+      21,
+      26,
+      43,
+      44,
+      64,
+      66,
+      67,
+      79,
+      90,
+      102,
+      113,
+      125,
+      126,
+      131,
+      156,
+      158,
+      162,
+      167,
+      188
+    ],
+    "losses_ids": [
+      106,
+      154
+    ]
+  },
+  "holdout200_paired": {
+    "difference": 0.095,
+    "wins": 19,
+    "losses": 0,
+    "ci95": [
+      0.055,
+      0.14
+    ],
+    "wins_ids": [
+      3,
+      5,
+      55,
+      89,
+      99,
+      100,
+      103,
+      104,
+      111,
+      125,
+      135,
+      136,
+      139,
+      143,
+      149,
+      158,
+      166,
+      169,
+      179
+    ],
+    "losses_ids": []
+  }
+}

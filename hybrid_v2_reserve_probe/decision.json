@@ -1,0 +1,6 @@
+{
+  "status": "abandoned_before_training",
+  "reason": "8 percent reserve reduced known baseline success from 172/200 to 152/200; final version preserves original cruise speed",
+  "source_config": "config.json",
+  "baseline_result": "base_original200.jsonl.summary.json"
+}

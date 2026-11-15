@@ -1,0 +1,13 @@
+{
+  "episodes": 100,
+  "success_rate": 0.87,
+  "counts": {
+    "success": 87,
+    "caught": 13,
+    "obstacle_collision": 0,
+    "timeout": 0,
+    "detect_fail": 0
+  },
+  "avg_success_steps": 36.689655172413794,
+  "avg_switches": 0.0
+}

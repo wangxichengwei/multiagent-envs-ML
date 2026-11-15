@@ -1,0 +1,116 @@
+{
+  "budget": 65536,
+  "completed_steps": 65536,
+  "train_seed": 15,
+  "best_step": 16384,
+  "best_validation_success": 0.98,
+  "rule_validation100": {
+    "episodes": 100,
+    "success_rate": 0.97,
+    "counts": {
+      "success": 97,
+      "caught": 3,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 42.16494845360825,
+    "avg_switches": 0.77
+  },
+  "ppo_validation100": {
+    "step": 16384,
+    "episodes": 100,
+    "success_rate": 0.98,
+    "counts": {
+      "success": 98,
+      "caught": 2,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 42.61224489795919,
+    "avg_switches": 0.77
+  },
+  "rule_original200": {
+    "episodes": 200,
+    "success_rate": 0.945,
+    "counts": {
+      "success": 189,
+      "caught": 11,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 39.23809523809524,
+    "avg_switches": 0.625
+  },
+  "ppo_original200": {
+    "episodes": 200,
+    "success_rate": 0.945,
+    "counts": {
+      "success": 189,
+      "caught": 11,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 39.31216931216931,
+    "avg_switches": 0.645
+  },
+  "rule_holdout200": {
+    "episodes": 200,
+    "success_rate": 0.98,
+    "counts": {
+      "success": 196,
+      "caught": 4,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 39.18877551020408,
+    "avg_switches": 0.66
+  },
+  "ppo_holdout200": {
+    "episodes": 200,
+    "success_rate": 0.975,
+    "counts": {
+      "success": 195,
+      "caught": 5,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 39.09230769230769,
+    "avg_switches": 0.64
+  },
+  "original200_paired": {
+    "difference": 0.0,
+    "wins": 2,
+    "losses": 2,
+    "ci95": [
+      -0.02,
+      0.02
+    ],
+    "wins_ids": [
+      129,
+      154
+    ],
+    "losses_ids": [
+      59,
+      113
+    ]
+  },
+  "holdout200_paired": {
+    "difference": -0.005,
+    "wins": 0,
+    "losses": 1,
+    "ci95": [
+      -0.015,
+      0.0
+    ],
+    "wins_ids": [],
+    "losses_ids": [
+      49
+    ]
+  }
+}

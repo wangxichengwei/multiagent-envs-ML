@@ -1,0 +1,117 @@
+{
+  "seed": 15,
+  "budget": 65536,
+  "rollout": 2048,
+  "validation_interval": 16384,
+  "gamma": 0.99,
+  "gae_lambda": 0.95,
+  "epochs": 8,
+  "batch_size": 256,
+  "lr": 0.0001,
+  "gradient_clip": 0.5,
+  "kl": 0.03,
+  "entropy": 0.01,
+  "features": {
+    "prey_position": [
+      0,
+      2
+    ],
+    "prey_velocity": [
+      2,
+      4
+    ],
+    "predator_relative_position": [
+      4,
+      6
+    ],
+    "relative_velocity": [
+      6,
+      8
+    ],
+    "goal_relative_position": [
+      8,
+      10
+    ],
+    "obstacles_relative_position": [
+      10,
+      16
+    ],
+    "boundary_clearance": [
+      16,
+      20
+    ],
+    "previous_action": [
+      20,
+      22
+    ],
+    "risk": [
+      22,
+      26
+    ],
+    "detected": [
+      26,
+      32
+    ],
+    "obstacle_risk": [
+      32,
+      44
+    ],
+    "candidate_targets": [
+      44,
+      50
+    ],
+    "candidate_lengths": [
+      50,
+      53
+    ],
+    "candidate_mask": [
+      53,
+      56
+    ],
+    "turn": [
+      56,
+      57
+    ],
+    "base_speed": [
+      57,
+      58
+    ],
+    "route_age": [
+      58,
+      59
+    ],
+    "route_side": [
+      59,
+      62
+    ],
+    "previous_command": [
+      62,
+      64
+    ]
+  },
+  "actions": {
+    "route": [
+      "keep",
+      "left",
+      "right"
+    ],
+    "continuous": [
+      "heading_offset_pi/2",
+      "speed_adjustment"
+    ],
+    "transform": "tanh",
+    "interval": 5
+  },
+  "controller": {
+    "radius": 0.1,
+    "max_speed": 0.25,
+    "brake_accel": 0.7,
+    "gain": 8.0,
+    "hysteresis": 0.02,
+    "interval": 5,
+    "reached": 0.025
+  },
+  "validation_seed": 20261024,
+  "holdout_seed": 20261025,
+  "training_scenario_seed": 15
+}

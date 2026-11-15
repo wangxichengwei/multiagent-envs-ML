@@ -1,0 +1,126 @@
+{
+  "budget": 65536,
+  "completed_steps": 65536,
+  "train_seed": 15,
+  "best_step": 65536,
+  "best_validation_success": 0.88,
+  "base_validation": {
+    "episodes": 100,
+    "success_rate": 0.87,
+    "counts": {
+      "success": 87,
+      "caught": 13,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 36.689655172413794,
+    "avg_switches": 0.0
+  },
+  "base_original": {
+    "episodes": 200,
+    "success_rate": 0.86,
+    "counts": {
+      "success": 172,
+      "caught": 28,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 35.53488372093023,
+    "avg_switches": 0.0
+  },
+  "hybrid_original": {
+    "episodes": 200,
+    "success_rate": 0.85,
+    "counts": {
+      "success": 170,
+      "caught": 30,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 35.3235294117647,
+    "avg_switches": 0.0
+  },
+  "base_holdout": {
+    "episodes": 200,
+    "success_rate": 0.885,
+    "counts": {
+      "success": 177,
+      "caught": 23,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 34.333333333333336,
+    "avg_switches": 0.0
+  },
+  "hybrid_holdout": {
+    "episodes": 200,
+    "success_rate": 0.885,
+    "counts": {
+      "success": 177,
+      "caught": 23,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 34.333333333333336,
+    "avg_switches": 0.0
+  },
+  "reference_holdout": {
+    "episodes": 200,
+    "success_rate": 0.885,
+    "counts": {
+      "success": 177,
+      "caught": 23,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 34.333333333333336,
+    "avg_switches": 0.0
+  },
+  "reference_validation": {
+    "episodes": 100,
+    "success_rate": 0.87,
+    "counts": {
+      "success": 87,
+      "caught": 13,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 36.689655172413794,
+    "avg_switches": 0.0
+  },
+  "paired_success_difference": -0.010000000000000009,
+  "paired_bootstrap_ci95": [
+    -0.025,
+    0.0
+  ],
+  "original_paired_wins": 0,
+  "original_paired_losses": 2,
+  "validation_improvement": 0.010000000000000009,
+  "recommend_long_training": false,
+  "automatic_extension": false,
+  "original200_paired": {
+    "wins": 0,
+    "losses": 2,
+    "difference": -0.01,
+    "ci95": [
+      -0.025,
+      0.0
+    ]
+  },
+  "holdout200_paired": {
+    "wins": 2,
+    "losses": 2,
+    "difference": 0.0,
+    "ci95": [
+      -0.02,
+      0.02
+    ]
+  }
+}

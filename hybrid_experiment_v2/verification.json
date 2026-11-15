@@ -1,0 +1,27 @@
+{
+  "test_command": "C:\\Users\\wangw\\.conda\\envs\\multiagent\\python.exe -m unittest discover -v",
+  "passed": 38,
+  "failed": 0,
+  "real_image_smoke_steps": 8,
+  "checkpoint_roundtrip": true,
+  "notes": "Real image smoke plus full zero-command baseline replay; final report records full evaluation.",
+  "completed_updates": 32,
+  "training_samples": 65536,
+  "training_counts": {
+    "success": 886,
+    "regular": 1278,
+    "caught": 1435,
+    "intercept": 1044,
+    "obstacle_collision": 1
+  },
+  "training_decision_choices": [
+    8195,
+    924,
+    785
+  ],
+  "all_scene_ids_valid": true,
+  "zero_command_original_identity": true,
+  "zero_command_holdout_identity": true,
+  "experiment_sources_unchanged": true,
+  "v1_sources_unchanged": true
+}

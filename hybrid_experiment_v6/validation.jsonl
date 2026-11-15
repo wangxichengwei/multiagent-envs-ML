@@ -1,0 +1,4 @@
+{"step": 16384, "episodes": 100, "success_rate": 0.91, "counts": {"success": 91, "caught": 8, "obstacle_collision": 1, "timeout": 0, "detect_fail": 0}, "avg_success_steps": 41.472527472527474, "avg_switches": 0.76}
+{"step": 32768, "episodes": 100, "success_rate": 0.88, "counts": {"success": 88, "caught": 10, "obstacle_collision": 2, "timeout": 0, "detect_fail": 0}, "avg_success_steps": 40.14772727272727, "avg_switches": 0.78}
+{"step": 49152, "episodes": 100, "success_rate": 0.91, "counts": {"success": 91, "caught": 7, "obstacle_collision": 2, "timeout": 0, "detect_fail": 0}, "avg_success_steps": 40.61538461538461, "avg_switches": 0.79}
+{"step": 65536, "episodes": 100, "success_rate": 0.91, "counts": {"success": 91, "caught": 7, "obstacle_collision": 2, "timeout": 0, "detect_fail": 0}, "avg_success_steps": 41.15384615384615, "avg_switches": 0.76}

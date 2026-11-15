@@ -4,11 +4,11 @@ import numpy as np
 
 
 class PathReward:
-    def __init__(self, tracker, gamma=.99, beta=2., risk_weight=0.):
+    def __init__(self, tracker, gamma=.99, beta=2., risk_weight=0., radius=.09):
         self.gamma, self.beta, self.risk_weight = gamma, beta, risk_weight
         self.goal = tracker.positions['checkpoint'].copy()
         self.obstacles = tracker.obstacles.copy()
-        self.radius = .09  # obstacle .05 + ball .025 + safety margin .015
+        self.radius = radius  # legacy default: .05 + .025 + .015
         angles = np.arange(16) * (2*np.pi/16)
         ring = np.column_stack([np.cos(angles), np.sin(angles)])
         # Circumscribed polygon edges remain outside the inflated circle.

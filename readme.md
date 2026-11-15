@@ -211,3 +211,43 @@ if True in done_n:
 障碍物位置固定。
 
 课程展示后将报告以小组形式发送到邮箱：`1075361077@qq.com`
+
+
+## 64维混合决策版本
+
+速度控制、混合路线/偏转/速度PPO和65536步短训流程见 [HYBRID_README.md](HYBRID_README.md)。
+旧模型及原200局结果保留。独立测试使用 `python evaluate_hybrid.py --method base --episodes 20`，不会启动训练。
+
+## 76维威胁感知实验 v2
+
+拦截场景课程、捕食者感知候选路线、有效速度余量和独立短训见 [HYBRID_V2_README.md](HYBRID_V2_README.md)。
+可见测试入口为 `python evaluate_hybrid_v2.py --method hybrid --episodes 20`；`--method reference` 可复测 v1 基础控制器。
+
+## 规则式捕食者躲避 v3
+
+确定性躲避规则（无需训练）：当威胁预演判定直行会被截击时，自动切换到预演净间距更大的安全侧路线。
+见 [HYBRID_V3_README.md](HYBRID_V3_README.md)。评估入口：
+`python evaluate_hybrid_v3.py --method evasion --episodes 20`；完整配对对比用 `--compare`。
+
+## PPO 连续指令 v4
+
+在 v3 规则路线上让 PPO 学习航向偏转与速度恢复两个连续指令，零均值初始化、命令门控与躲避奖励。
+见 [HYBRID_V4_README.md](HYBRID_V4_README.md)。训练入口：
+`python train_hybrid_v4.py --output hybrid_experiment_v4 --steps 65536`（短训，不启动长训练）。
+
+## 全向 PPO v5
+
+把 v4 的航向偏转范围扩大到 ±180°、躲避奖励权重翻倍，其余不变（消融验证）。
+见 [HYBRID_V5_README.md](HYBRID_V5_README.md)。训练入口：
+`python train_hybrid_v5.py --output hybrid_experiment_v5 --steps 65536`。
+
+## 绕行点偏移 PPO v6（负面结果）
+
+让 PPO 学二维绕行点偏移、把规则绕行点推得更远。留出集 -3.5%（7 负 0 胜）、并引入撞障碍，
+**不推荐使用**，保留为失败记录。见 [HYBRID_V6_README.md](HYBRID_V6_README.md)。
+
+## 障碍安全绕行点偏移 v7
+
+与 v6 相同的 2 维偏移动作，但使用前投影到安全集（边界内且不穿障碍物，不安全则二分收缩）。
+见 [HYBRID_V7_README.md](HYBRID_V7_README.md)。训练入口：
+`python train_hybrid_v7.py --output hybrid_experiment_v7 --steps 65536`。

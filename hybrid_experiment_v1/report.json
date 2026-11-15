@@ -1,0 +1,109 @@
+{
+  "budget": 65536,
+  "completed_steps": 65536,
+  "train_seed": 15,
+  "best_step": 16384,
+  "best_validation_success": 0.94,
+  "base_validation": {
+    "episodes": 50,
+    "success_rate": 0.92,
+    "counts": {
+      "success": 46,
+      "caught": 4,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 33.54347826086956,
+    "avg_switches": 0.0
+  },
+  "base_original": {
+    "episodes": 200,
+    "success_rate": 0.86,
+    "counts": {
+      "success": 172,
+      "caught": 28,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 35.53488372093023,
+    "avg_switches": 0.0
+  },
+  "hybrid_original": {
+    "episodes": 200,
+    "success_rate": 0.86,
+    "counts": {
+      "success": 172,
+      "caught": 28,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 35.52325581395349,
+    "avg_switches": 0.0
+  },
+  "base_holdout": {
+    "episodes": 200,
+    "success_rate": 0.875,
+    "counts": {
+      "success": 175,
+      "caught": 25,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 35.08571428571429,
+    "avg_switches": 0.0
+  },
+  "hybrid_holdout": {
+    "episodes": 200,
+    "success_rate": 0.87,
+    "counts": {
+      "success": 174,
+      "caught": 26,
+      "obstacle_collision": 0,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 34.87931034482759,
+    "avg_switches": 0.0
+  },
+  "direct_holdout": {
+    "episodes": 200,
+    "success_rate": 0.735,
+    "counts": {
+      "success": 147,
+      "caught": 22,
+      "obstacle_collision": 31,
+      "timeout": 0,
+      "detect_fail": 0
+    },
+    "avg_success_steps": 32.775510204081634,
+    "avg_switches": 0.0
+  },
+  "paired_success_difference": 0.0,
+  "paired_bootstrap_ci95": [
+    0.0,
+    0.0
+  ],
+  "original_paired_wins": 0,
+  "original_paired_losses": 0,
+  "recommend_long_training": false,
+  "automatic_extension": false,
+  "holdout_paired_difference": -0.005,
+  "holdout_paired_ci95": [
+    -0.015,
+    0.0
+  ],
+  "holdout_paired_wins": 0,
+  "holdout_paired_losses": 1,
+  "functional_tests_passed": 27,
+  "integrity": {
+    "eval_episodes": 1250,
+    "training_steps": 65536,
+    "updates": 32,
+    "source_hashes_match": true,
+    "error_log_empty": true
+  }
+}
