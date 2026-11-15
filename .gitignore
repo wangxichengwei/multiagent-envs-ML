@@ -27,12 +27,6 @@ venv/
 /tmp.pdf
 /tmp.txt
 *.pid
-# DSH 沙箱测试遗留的空目录（文件权限锁住，无法删除）
-/tmp1qsqdrql/
-/tmpbd9aq448/
-/tmpfmn0n9ik/
-/tmpki4b2f8b/
-/tmpusg0l0ty/
 
 # 实验产物：只提交报告、配置和汇总，排除模型检查点与逐局/逐回合大日志
 hybrid_experiment_*/*.pt
